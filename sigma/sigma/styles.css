@@ -12,6 +12,8 @@ header {
 }
 #grad {
   background: linear-gradient(to bottom right, #e6e6ff, #ccf2ff);
+  font-family: Nova Round, serif;
+
 }
 body {
 
@@ -61,4 +63,13 @@ p {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+.pageName {
+  text-align: right;
+}
+
+#countDownTimer {
+  font-size: 64px;
+  color: #5F9EA0;
 }
