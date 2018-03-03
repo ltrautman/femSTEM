@@ -12,7 +12,7 @@ header {
 }
 #grad {
   background: linear-gradient(to bottom right, #e6e6ff, #ccf2ff);
-  font-family: Nova Round, serif;
+  font-family: Raleway, serif;
 
 }
 body {
@@ -84,4 +84,9 @@ div#star {
 #countDownTimer {
   font-size: 64px;
   color: #5F9EA0;
+  line-height: 2px;
+}
+
+#timeRemaining {
+  text-align: center;
 }
