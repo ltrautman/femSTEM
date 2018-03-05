@@ -1,0 +1,110 @@
+header {
+  background-image: url("header1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+  color: white;
+  font-family: Nova Round, serif;
+  font-size: 60px;
+}
+#grad {
+  background: linear-gradient(to bottom right, #e6e6ff, #ccf2ff);
+  font-family: Raleway, serif;
+
+}
+body {
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: Raleway, serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+div#line {
+	position:relative;
+	left:100px;
+    top:10px;
+}
+div#star {
+    position:relative;
+    left:10px;
+    top:-50px;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    font-family: Raleway, serif;
+    font-size: 35px
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.pageName {
+  text-align: right;
+}
+
+#countDownTimer {
+  font-size: 64px;
+  color: #5F9EA0;
+  line-height: 2px;
+}
+
+#timeRemaining {
+  text-align: center;
+}
+
+#aboutus_signature {
+  text-align: right;
+  line-height: 12px;
+}
+
+.aboutus_question {
+  font-family: Raleway, serif;
+  font-size: 24px;
+  text-align: center;
+  line-height: 2px;
+}
+
+.aboutus_answer {
+  font-family: Raleway, serif;
+  font-size: 18px;
+  text-align: center;
+}
