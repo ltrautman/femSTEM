@@ -90,3 +90,21 @@ div#star {
 #timeRemaining {
   text-align: center;
 }
+
+#aboutus_signature {
+  text-align: right;
+  line-height: 12px;
+}
+
+.aboutus_question {
+  font-family: Raleway, serif;
+  font-size: 24px;
+  text-align: center;
+  line-height: 2px;
+}
+
+.aboutus_answer {
+  font-family: Raleway, serif;
+  font-size: 18px;
+  text-align: center;
+}
