@@ -12,11 +12,11 @@ header {
 }
 #grad {
   background: linear-gradient(to bottom right, #e6e6ff, #ccf2ff);
-  font-family: Raleway, serif;
-
 }
-body {
 
+body {
+  background: #F5F5F5;
+  font-family: Raleway, serif;
 }
 
 h1 {
@@ -32,14 +32,15 @@ p {
 
 .tab {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background: #f1f1f1 /*linear-gradient(to right, #e6e6ff, #ccf2ff)*/;
+    padding: 15px 5px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
     font-family: Raleway, serif;
-    font-size: 35px
+    font-size: 14px;
     float: left;
     border: none;
     outline: none;
@@ -102,7 +103,8 @@ p {
   box-sizing: border-box;
 }
 
-/* The actual timeline (the vertical ruler) */
+
+/*TIMELINE*/
 
 .timeline_content {
   font-family: Raleway, serif;
@@ -114,8 +116,6 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
   position: absolute;
@@ -233,16 +233,41 @@ p {
   }
 }
 
+
+/*SCHEDULER*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1.5px solid #aaaaaa;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+
+#module {
+    width: 300px;
+    height: 70px;
+    padding:10px;
+    border: 2px solid #aaaaaa;
+}
+
 .login_form {
     position: relative;
     top: 50px;
     float: middle;
     text-align: center;
     width: 25%;
-  	padding: 18px 6% 60px 6%;
-  	margin: 0 0 35px 0;
-  	background-color: #f1f1f1;
-  	border: 1px solid rgba(147, 184, 189,0.8);
-  	border-radius: 5px;
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background-color: #f1f1f1;
+    border: 1px solid rgba(147, 184, 189,0.8);
+    border-radius: 5px;
     margin: auto;
 }
