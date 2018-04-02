@@ -232,7 +232,6 @@ p {
   }
 }
 
-<<<<<<< HEAD
 
 /*SCHEDULER*/
 table {
@@ -258,7 +257,6 @@ tr:nth-child(even) {
     border: 2px solid #aaaaaa;
 }
 
-=======
 .login_form {
     position: relative;
     top: 50px;
@@ -272,4 +270,3 @@ tr:nth-child(even) {
   	border-radius: 5px;
     margin: auto;
 }
->>>>>>> 9c10c4ba755d4eabf6c1d79aa112530361cb3b3c
