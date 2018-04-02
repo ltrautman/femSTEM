@@ -1,0 +1,69 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<link rel="stylesheet" href="styles.css">
+    <script src="scheduler.js"></script>
+		<h1></h1>
+	</head>
+	<div class="tab">
+		<button class="tablinks">sigma</button>
+  		<button class="tablinks">About Us</button>
+ 	 	<button class="tablinks">Organizer Resources</button>
+ 	 	<button class="tablinks">FAQs</button>
+  		<button class="tablinks">Events Near Me</button>
+  		<button class="tablinks">Dashboard</button>
+	</div>
+	<body id="grad">
+		<h1 class="pageName">Scheduler</h1>
+		<h3>Choose your start and end times.</h3>
+		<form>
+		Start Time: 
+		<select id="start_time">
+		    <option>8:00AM</option>
+		    <option>9:00AM</option>
+		    <option>10:00AM</option>
+		    <option>11:00AM</option>
+		    <option>12:00PM</option>
+		</select>
+		End Time: 
+		<select id="end_time">
+		    <option>8:00AM</option>
+		    <option>9:00AM</option>
+		    <option>10:00AM</option>
+		    <option>11:00AM</option>
+		    <option>12:00PM</option>
+		</select>
+		
+		<input type="button" onclick="fillTime()" value="submit">
+		</form>
+		<h2>Schedule</h2>
+		<table style="width:50%">
+  			<tr>
+    			<th>Time</th>
+    			<th>Activity</th> 
+    			<th>Comments</th>
+  			</tr>
+  			<tr>
+			    <td id="start_timeslot"></td>
+			    <td id="activity_box", ondrop="drop(event)" ondragover="allowDrop(event)"></td> 
+			    <td></td>
+			</tr>
+			<tr>
+			    <td id="end_timeslot"></td>
+			    <td ondrop="drop(event)" ondragover="allowDrop(event)"></td> 
+			    <td></td>
+			</tr>
+		</table>
+		<h3>Drag and drop activities.</h3>
+		<h4>
+			Modules
+		</h4>
+
+		
+		<div id="module" draggable="true" ondragstart="drag(event)">
+			drag me!
+		</div>
+	</body>
+</html>
