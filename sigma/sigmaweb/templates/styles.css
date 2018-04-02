@@ -15,8 +15,10 @@ header {
   font-family: Raleway, serif;
 
 }
-body {
 
+body {
+  background: #F5F5F5;
+  font-family: Raleway, serif;
 }
 
 h1 {
@@ -32,14 +34,15 @@ p {
 
 .tab {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background: linear-gradient(to right, #e6e6ff, #ccf2ff);
+    padding: 15px 5px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
     font-family: Raleway, serif;
-    font-size: 35px
+    font-size: 14px;
     float: left;
     border: none;
     outline: none;
