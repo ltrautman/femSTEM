@@ -102,8 +102,7 @@ p {
   box-sizing: border-box;
 }
 
-
-/*TIMELINE*/
+/* The actual timeline (the vertical ruler) */
 
 .timeline_content {
   font-family: Raleway, serif;
@@ -115,6 +114,8 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
   position: absolute;
@@ -232,33 +233,6 @@ p {
   }
 }
 
-<<<<<<< HEAD
-
-/*SCHEDULER*/
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1.5px solid #aaaaaa;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #f1f1f1;
-  }
-
-#module {
-    width: 300px;
-    height: 70px;
-    padding:10px;
-    border: 2px solid #aaaaaa;
-}
-
-=======
 .login_form {
     position: relative;
     top: 50px;
@@ -272,4 +246,3 @@ tr:nth-child(even) {
   	border-radius: 5px;
     margin: auto;
 }
->>>>>>> 9c10c4ba755d4eabf6c1d79aa112530361cb3b3c

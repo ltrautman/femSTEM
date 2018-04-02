@@ -3,7 +3,8 @@
 <! DOCTYPE html>
 <html>
 	<header>
-		sigma hackathon planner - dashboard
+		sigma hackathon planner
+    <title>Login</title>
 	</header>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
@@ -18,14 +19,19 @@
     	<a href="{% url 'faq'%}"><button class="tablinks">FAQ</button></a>
 	</div>
 	<body id="grad">
-		<h1 class="pageName">Dashboard</h1>
-    <h3>Pick a design challenge!</h3>
-    <h3>Next item to do: Pick a challenge!</h3>
-    <h2>Hackathon Design</h2>
-    <h2>Timeline</h2>
-    <h2>Scheduler</h2>
-    <h3 id=timeRemaining>Countdown 'til the big day </h3><h1 id="countDownTimer"> TIME REMAINING </h3>
-    <h2>Budgeting</h2>
-    <h2>Publicity</h2>
+    <form class="login_form">
+      <label for="login"><b>Login</b></label><br><br>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+      <label for="password"><b>Password</b></label>
+      <input type="text" placeholder="Enter Password" name="password" required>
+    </form>
+    {% block content %}
+	    <form method="post">
+	    {% csrf_token %}
+	    {{ form.as_p }}
+	    <button type="submit">Login</button>
+	  	</form>
+	  {% endblock %}
 	</body>
 </html>
