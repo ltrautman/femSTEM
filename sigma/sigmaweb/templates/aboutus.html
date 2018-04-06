@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <! DOCTYPE html>
 <html>
 	<header>
@@ -6,13 +8,14 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 		<h1></h1>
 	</head>
 	<div class="tab">
-  		<button class="tablinks">About Us</button>
+  		<a href="{% url 'aboutus'%}"><button class="tablinks">About Us</button></a>
  	 	<button class="tablinks">Organizer Resources</button>
-  		<button class="tablinks">Dashboard</button>
+  		<a href="{% url 'dashboard'%}"><button class="tablinks">Dashboard</button></a>
+    	<a href="{% url 'faq'%}"><button class="tablinks">FAQ</button></a>
 	</div>
 	<body id="grad">
 		<h2 class="aboutus_question">Who are we?</h2>

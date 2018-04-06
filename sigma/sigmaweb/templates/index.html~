@@ -14,9 +14,13 @@
 	<div class="tab">
   		<a href="url {%'aboutus'%}"><button class="tablinks">About Us</button></a>
  	 	<button class="tablinks">Organizer Resources</button>
+<<<<<<< HEAD
+  		<button class="tablinks">Dashboard</button>
+  		<button class="tablinks">FAQs</button>
+=======
   		<a href="url {%'dashboard'%}"><button class="tablinks">Dashboard</button></a>
     	<a href=" url {%'faq'%}"><button class="tablinks">FAQ</button></a>
-
+>>>>>>> 0248a3a23253a405fc09acbf012ee5e5c4b4c00e
 	</div>
 	<body id="grad">
 		<p>Design a hackathon for middle school girls!</p>
