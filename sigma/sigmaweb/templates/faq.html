@@ -10,6 +10,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+		<script type="text/javascript" src="{% static 'js/faq.js' %}"></script>
+
 		<h1></h1>
 	</head>
 	<div class="tab">
@@ -19,6 +21,32 @@
     	<a href="{% url 'faq'%}"><button class="tablinks">FAQ</button></a>
 	</div>
 	<body id="grad">
-		<p>What is sigma? Why do I want to do this? How can I start? Give me answers pls!</p>
+
+		<button class="accordion">Who can do this?</button>
+		<div class="panel">
+			<p class="aboutus_answer">Anyone interested in spreading their passion for STEM to middle schoolers!
+				We provide potential design challenges, workshop ideas, and template schedule plans for the hackathon,
+				so follow the guide.</p>
+		</div>
+
+		<h2 class="aboutus_question">Who can do this?</h2>
+		<p class="aboutus_answer">Anyone interested in spreading their passion for STEM to middle schoolers!
+			We provide potential design challenges, workshop ideas, and template schedule plans for the hackathon,
+			so follow the guide.</p><br>
+
+		<h2 class="aboutus_question">How long would this event take?</h2>
+		<p class="aboutus_answer">Our template schedule has the hackathon for about 4 to 5 hors.
+			However, feel free to make it shorter or longer if you would like.</p><br>
+
+		<h2 class="aboutus_question">What should we do about obtaining parental consent
+			to work with the students?</h2>
+		<p class="aboutus_answer">We will be providing more information about working with middle schools,
+			safety, and parental consent forms. This is all under Organizer resources.</p><br>
+
+	  <h2 class="aboutus_question">What about SWAG? How can I get food/t-shirts for the middle schoolers?</h2>
+		<p class="aboutus_answer">One way is to get funding from your school. More information under
+			Organizer Resources/Budgeting.
+			Going to restaurants and asking about food sponsors are also potential solutions.</p><br>
+
 	</body>
 </html>
