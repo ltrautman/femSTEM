@@ -1,6 +1,6 @@
 {% load staticfiles %}
 
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<header>
 		sigma hackathon planner
@@ -20,5 +20,7 @@
 	</div>
 	<body id="grad">
 		<p>Design a hackathon for middle school girls!</p>
+		<a href="{% url 'login'%}"><p>Login</p></a>
+		<a href="{% url 'register'%}"><p>Register</p></a>
 	</body>
 </html>

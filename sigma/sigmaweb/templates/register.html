@@ -1,6 +1,6 @@
 {% load staticfiles %}
 
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<header>
 		sigma hackathon planner
@@ -18,8 +18,17 @@
   		<a href="{% url 'dashboard'%}"><button class="tablinks">Dashboard</button></a>
     	<a href="{% url 'faq'%}"><button class="tablinks">FAQ</button></a>
 	</div>
+	{% block content %}
+	  	<h2>Sign up</h2>
+	  	<form method="post">
+	    	{% csrf_token %}
+	    	{{ form.as_p }}
+	    	<button type="submit">Sign up</button>
+	  	</form>
+	{% endblock %}
+
 	<body id="grad">
-		<form class="login_form">
+	<form class="login_form">
       <label for="login"><b>Register and Join Us!</b></label><br><br>
 			<label for="name"><b>Name</b></label>
       <input type="text" placeholder="Enter Your First Last Name" name="name" required><br><br>
